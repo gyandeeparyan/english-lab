@@ -15,7 +15,7 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div className=" py-2">
+    <div className="px-15 pt-2">
       <NavigationMenu>
         <NavigationMenuList>
 

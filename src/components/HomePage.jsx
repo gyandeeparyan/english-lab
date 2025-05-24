@@ -11,10 +11,9 @@ import {
 import { classList } from "@/data/classinfo";
 import { Button } from "./ui/button";
 
-
 export const HomePage = () => {
   return (
-    <div className='grid grid-cols-4 gap-2'>
+    <div className='grid grid-cols-1 md:grid-cols-4 gap-2'>
       {classList.map((item) => (
         <>
           <div>
@@ -29,7 +28,7 @@ export const HomePage = () => {
                 ))}
               </CardContent>
               <CardFooter>
-                <Link to={`/class`}>
+                <Link to={`/class/${item.standard}`}>
                   <Button>Open</Button>
                 </Link>
               </CardFooter>
