@@ -6,9 +6,9 @@ import { ClassContent } from "./components/ClassContent";
 import { Navbar } from "./components/Navbar"
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Navbar/>
+    
     <Routes>
-      <Route path='/' element={<App />} />
+      <Route path='/' element={<><Navbar/><App /></>} />
       <Route path='/class/:number' element={<ClassContent />} />
     </Routes>
   </BrowserRouter>
