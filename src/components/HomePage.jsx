@@ -49,8 +49,8 @@ const colorScheme = {
 export const HomePage = () => {
   return (
     <div className='container mx-auto p-4'>
-      <h1 className='text-2xl font-bold mb-6 text-center'>
-        English Conversation Lab 
+      <h1 className='text-2xl md:text-4xl font-bold mb-6 text-center font-dancing-script'>
+        ENGLISH LAB 
       </h1>
       <div className='grid grid-cols-1  md:grid-cols-4 lg:grid-cols-5 gap-4'>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((standard) => (
