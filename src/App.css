@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

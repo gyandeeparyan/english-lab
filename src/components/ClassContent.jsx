@@ -1,11 +1,14 @@
 import React from "react";
-import { useParams } from "react-router";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { classContent } from "@/data/classContent";
+
+import Videos from "./Videos";
+import { Ebooks } from "./Ebooks";
+import Games from "./Games";
 
 export const ClassContent = () => {
-  const { number } = useParams();
-  const content = classContent[number] || {};
+  // const { number } = useParams();
+  // const content = classContent[number] || {};
 
   return (
     <div>
@@ -17,25 +20,13 @@ export const ClassContent = () => {
             <TabsTrigger value='games'>Games</TabsTrigger>
           </TabsList>
           <TabsContent value='videos'>
-            <ul>
-              {content.videos?.map((video, index) => (
-                <li key={index}>{video}</li>
-              ))}
-            </ul>
+            <Videos/>
           </TabsContent>
           <TabsContent value='ebooks'>
-            <ul>
-              {content.ebooks?.map((book, index) => (
-                <li key={index}>{book}</li>
-              ))}
-            </ul>
+            <Ebooks/>
           </TabsContent>
           <TabsContent value='games'>
-            <ul>
-              {content.games?.map((game, index) => (
-                <li key={index}>{game}</li>
-              ))}
-            </ul>
+            <Games/>
           </TabsContent>
         </Tabs>
       </div>
