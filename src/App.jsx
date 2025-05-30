@@ -4,7 +4,7 @@ import { HomePage } from "./components/HomePage"
 
 function App() {
   return (
-    <div className="flex flex-col px-15  min-h-svh">
+    <div className="flex flex-col md:px-15  min-h-svh">
     
       <HomePage/>
     </div>
