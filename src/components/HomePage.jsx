@@ -58,7 +58,7 @@ export const HomePage = () => {
             <Card
               className={`${colorScheme[standard].bg} ${colorScheme[standard].hover} transition-all duration-300 transform hover:scale-105 cursor-pointer h-full shadow-lg hover:shadow-xl backdrop-blur-sm`}>
               <CardContent className='p-6 flex flex-col items-center justify-center text-white'>
-                <span className='text-5xl sm:text-6xl md:text-7xl font-bold mb-2'>
+                <span className='text-7xl  md:text-9xl font-bold mb-2'>
                   {standard}
                 </span>
                 <span className='text-sm sm:text-base'>Standard</span>
