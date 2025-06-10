@@ -5,6 +5,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Videos from "./Videos";
 import { Ebooks } from "./Ebooks";
 import Games from "./Games";
+import { Ai } from "./Ai";
+import { Quiz } from "./Quiz";
+import { Dictionary } from "./Dictionary";
 
 export const ClassContent = () => {
   return (
@@ -17,6 +20,10 @@ export const ClassContent = () => {
                 <TabsTrigger value='videos'>Videos</TabsTrigger>
                 <TabsTrigger value='ebooks'>E-Books</TabsTrigger>
                 <TabsTrigger value='games'>Games</TabsTrigger>
+                <TabsTrigger value='quiz'>Quiz</TabsTrigger>
+                <TabsTrigger value='dict'>Dictionary</TabsTrigger>
+
+                <TabsTrigger value='ai'>AI</TabsTrigger>
               </TabsList>
             </div>
             <TabsContent value='videos'>
@@ -27,6 +34,16 @@ export const ClassContent = () => {
             </TabsContent>
             <TabsContent value='games'>
               <Games />
+            </TabsContent>
+            <TabsContent value='quiz'>
+              <Quiz />
+            </TabsContent>
+            <TabsContent value='dict'>
+              <Dictionary />
+            </TabsContent>
+
+            <TabsContent value='ai'>
+              <Ai />
             </TabsContent>
           </Tabs>
         </div>
