@@ -16,6 +16,10 @@ export const Dictionary = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  
+  
+
+
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -47,6 +51,7 @@ export const Dictionary = () => {
   const playAudio = (audioUrl) => {
     if (!audioUrl) return;
     const audio = new Audio(audioUrl);
+    console.log(audio);
     audio.onplay = () => setIsPlaying(true);
     audio.onended = () => setIsPlaying(false);
     audio.play();
